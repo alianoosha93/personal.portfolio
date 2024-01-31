@@ -1,0 +1,290 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Porfolio</title>
+     <style>
+        .contact{
+            background-color: rgb(41, 31, 31);
+            width: 100%;
+            padding: 100px 0px;
+         }
+         .contact.row{ 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+         }
+         .contact .row .contact{
+            flex:1 1 30rem;
+            padding: 4rem;
+            padding-bottom: 0;
+         }
+         .contact .row form{
+            flex:1 1 45rem;
+            padding: 2rem;
+            margin: 2rem;
+            margin-bottom: 4rem;
+         }
+         .contact .row form .box{
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background:rgb(41, 31, 31) ;
+            color: #fff;
+            text-transform: none;
+            font-size: 1.7rem;
+            width: 90rem;
+         }
+         .contact .row form .message{
+            height: 15rem;
+            resize: none;
+         }
+         .contact .row .contact .title{
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+         }
+         .contact .row .contact .info h3{
+            display: flex;
+            align-self: center;
+            font-size: 2rem;
+            color: #eee;
+            padding: 1rem 0;
+            font-weight: normal;
+         }
+
+    </style> 
+
+
+
+
+ <section class="contact" id="contact">
+    <h1 class="heading"><span>Contact</span> me</h1>
+    <div class="row">
+        <div class="content">
+            <h3 class="title">contact info</h3>
+            <div class="info">
+                <h3><li class="fas fa-envelop"></li> alianoosha93@gmail.com</h3>
+                <h3><li class="fas fa-phone"></li> +111-222-333</h3>
+                <h3><li class="fas fa-map-market-alt"></li> Pakistan, Karachi</h3>
+            </div>
+        </div>
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="text" placeholder="project" class="box">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+            <input type="submit" name="" id="">
+            <button type="submit">send <i class="fas fa-paper-plane"></i></button>
+
+
+        </form>
+    </div>
+</section>  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Personal portfolio</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         font-family: 'josefin sans', sans-serif;
+         box-sizing: border-box;
+         font-size: 10px;
+      }
+
+      body {
+         height: 100vh;
+         width: 100%;
+         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../website/math.png);
+         background-size: cover;
+         background-position: center;
+      }
+
+      #signup {
+         height: 100vh;
+         width: 90%;
+         margin: 0 auto;
+         display: block;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .container {
+         position: relative;
+         width: 100%;
+         max-width: 40rem;
+         background: #fff;
+         padding: 10rem 0;
+         box-shadow: 0 0 20px rgb(33 33 33/ 40%);
+         border-radius: 1rem;
+         z-index: 1;
+      }
+
+      .container::before {
+         position: absolute;
+         content: '';
+         left: 0;
+         top: 0;
+         height: 27rem;
+         width: 100%;
+         background: linear-gradient(to right, #252425, #404041);
+         border-bottom-left-radius: 100%;
+         border-bottom-right-radius: 100%;
+         z-index: -1;
+      }
+
+      .heading {
+         position: absolute;
+         color: white;
+         font-size: 3rem;
+         top: 3.5rem;
+         left: 10rem;
+      }
+
+      form {
+         background: #fff;
+         transform: translateX(10rem);
+         padding: 2rem 0;
+         border-radius: 1rem;
+         box-shadow: 0 0 20px rgb(33 33 33/ 60%);
+      }
+
+      .group {
+         position: relative;
+         width: 90%;
+         margin: 0 auto;
+         display: block;
+         align-items: baseline;
+      }
+
+      .group input {
+         position: relative;
+         width: 100%;
+         border: none;
+         outline: none;
+         padding: 1rem, 0;
+         margin-top: .6rem;
+         color: #252425;
+         font-size: 1.7rem;
+      }
+
+      .group>i {
+         color: #252425;
+         font-size: 2rem;
+         margin-right: 1rem;
+      }
+
+      .group .col {
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         background: rgba(0, 0, 0, 0.1);
+         width: 100%;
+         height: 1px;
+      }
+
+      .group button {
+         /* background: linear-gradient(to right, #252425, #3b393b); */
+         background: linear-gradient(to right,#f9004d,#f9004d);
+         padding: 1.2rem 2.5rem;
+         margin: 3rem auto;
+         outline: none;
+         border: none;
+         font-size: 1.5rem;
+         color: white;
+         border-radius: 5rem;
+
+      }
+
+      .group button:focus,
+      .group button:hover {
+         background: linear-gradient(to left, #252425, #3b393b);
+         cursor: pointer;
+
+      }
+
+      .member {
+         text-align: center;
+      }
+
+      .member a {
+         text-decoration: none;
+         color: #252425;
+         font-size: 1.5rem;
+      }
+
+      .member a span {
+         color: #252425;
+         font-size: 1.5rem;
+         padding-bottom: 2px;
+         border-bottom: 2px solid #252425;
+      }
+
+      @media only screen and (max-width:700px) {
+         .container::before {
+            height: 10rem;
+         }
+
+         .heading {
+            left: 50%;
+            transform: translateX(-50%);
+         }
+
+         form {
+            transform: initial;
+            border-radius: initial;
+            box-shadow: none;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div id="signup">
+      <div class="container">
+         <span class="heading">Sign up</span>
+         <form>
+            <div class="group"><i class="fa-solid fa-user"></i>
+               <input type="text" placeholder="Enter username">
+               <span class="col"></span>
+            </div>
+            <div class="group"><i class="fa-solid fa-envelope"></i></i>
+               <input type="Email" placeholder="Email">
+               <span class="col"></span>
+            </div>
+            <div class="group"><i class="fa-solid fa-lock"></i>
+               <input type="Password" placeholder="Enter Password">
+               <span class="col"></span>
+            </div>
+
+            <div class="group"><i class="fa-solid fa-lock-open"></i>
+               <input type="Password" placeholder="Confirm Password">
+               <span class="col"></span>
+            </div>
+            <div class="group">
+               <button type="button">sign up</button>
+            </div>
+            <div class="member">
+               <a href="#">Already a member <span>Log in</span></a>
+            </div>
+
+         </form>
+      </div>
+   </div>
+</body>
+
+</html>
